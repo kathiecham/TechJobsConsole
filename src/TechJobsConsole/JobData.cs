@@ -8,7 +8,10 @@ namespace TechJobsConsole
     class JobData
     {
         static List<Dictionary<string, string>> AllJobs = new List<Dictionary<string, string>>();
+        // declare (create) static list called AllJobs = 
+        // so these lists from dictionaries looks like (key1:value1, key2:value2, key3:value3)
         static bool IsDataLoaded = false;
+        //create booleen variable called "IsDataLoaded" is set to false
 
         public static List<Dictionary<string, string>> FindAll()
         {

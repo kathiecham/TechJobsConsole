@@ -25,7 +25,7 @@ namespace TechJobsConsole
             Console.WriteLine("Welcome to LaunchCode's TechJobs App!");
 
             // Allow user to search/list until they manually quit with ctrl+c
-            while (true)
+            while (true) 
             {
 
                 string actionChoice = GetUserSelection("View Jobs", actionChoices);
@@ -36,7 +36,7 @@ namespace TechJobsConsole
 
                     if (columnChoice.Equals("all"))
                     {
-                        PrintJobs(JobData.FindAll());
+                        PrintJobs(GetUserSelection.FindAll());
                     }
                     else
                     {
@@ -117,7 +117,7 @@ namespace TechJobsConsole
         }
 
         private static void PrintJobs(List<Dictionary<string, string>> someJobs)
-        {
+        { 
             Console.WriteLine("printJobs is not implemented yet");
         }
     }
